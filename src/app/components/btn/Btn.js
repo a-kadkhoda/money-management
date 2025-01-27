@@ -2,7 +2,7 @@ import { Button } from 'primereact/button';
 
 const Btn = () =>{
     return(
-        <><Button label="Submit" className='bg-red-500'/></>
+        <><Button label="Submit"/></>
     )
 }
 export default Btn
