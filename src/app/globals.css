@@ -2,20 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer tailwind-base, primereact, tailwind-utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* PrimeReact Core Styles */
+@import 'primereact/resources/primereact.min.css';
+
+/* PrimeIcons for icons (if needed) */
+@import 'primeicons/primeicons.css';
+
+/* PrimeReact Theme */
+@import 'primereact/resources/themes/lara-light-blue/theme.css'; 
